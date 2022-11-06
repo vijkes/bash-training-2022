@@ -1,0 +1,40 @@
+echo ${s:1:3}	1 is called off-set
+		3 is range or length
+
+u="https://www.youtube.com:443/tmp/index.html"
+
+echo ${u%/*}   % delete from right end
+https://www.youtube.com:443/tmp
+
+
+echo ${u%%/*}
+https:
+
+echo ${u#*/}    # delete from left end
+/www.youtube.com:443/tmp/index.html
+
+echo ${u##*/}
+index.html
+
+echo ${#u}	count no. of characters
+42
+
+ a=(vk md sd gfd sd)
+echo ${a[0]}
+vk
+
+echo ${a[1]}
+md
+echo ${a[2]}
+sd
+
+echo ${a[@]}
+vk md sd gfd sd
+
+echo ${#a[@]}
+5
+
+${@} charaters of arguments passed
+
+
+${#@} $# both are same ; count no. of args
