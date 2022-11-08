@@ -1,0 +1,16 @@
+ 1094  date 1>> n.xt
+ 1095  date1 2>> n.xt
+ 1096  date &>> n.xt
+
+ 1102  ping -c 1 www.google.com >> n.xt
+
+ 1104  ping -c 1 www.google.com > /dev/null
+
+ 1112  date 1>> bottle.txt 
+ 1114  date1 2>> bottle.txt
+ 1116  date >> bottle.txt
+ 
+ 1128  bash k.sh
+ 1133  . k.sh
+ 1134  . file.sh
+
