@@ -1,0 +1,80 @@
+In reg ex:
+$ means if we want to see any pattern at the end
+eg:  grep bash$ /etc/passwd
+
+successful o/t is called STDOUT
+send info to the channel 1
+
+unsuccessful o/t is called STDERR
+send info to the channel 2
+
+we can mix both channel using &
+
+ date 1>> n.txt
+  date 2>> n.txt
+  datedf 2>> n.txt
+  date &>> n.txt
+  
+tput: terminal color change
+
+nc : netcat  
+ncat - Concatenate and redirect sockets
+
+[a-z,A-Z][a-z,A-Z,(,^][a-z,A-Z]
+a[bB][bB]t
+a[0-9][a-z]t
+a[^0-9a-z0-9#,]t		<anything except ^0-9a-z0-9#, >
+ab*mc	==	abbbbbbmc
+
+ab+mc		!=	   " adbbbbbbbbbbbbbbbbbbmc "  <bcz first word after a is not b>
+
+[1-9]..[0-9]  display no. from 1000- 9999
+
+[1-9][0-9][0-9][0-9] == [1-9][0-9]{3} ==[1-9]\d{3}
+
+meta char. 
+
+[0-9] \d
+[any char that is not no. ] \D
+char having space	\s
+char not having space \S
+alpha numeric		\w
+non-alpha numeric  \W
+
+to convert special char into normal char we use \ 
+/a\.c
+
+abc
+a.c
+a^c
+a[c
+a]c
+
+start and end with same word 
+/\<first\>
+first come get first
+
+grep ^samsung /etc/passwd
+samsung:x:1019:1019::/home/samsung:/sbin/nologin
+search samsung at starting of line
+
+search email from list:
+/\w\{1,\}@\w\{1,\}\.\w\{2\}
+
+sed -n '/first/p' ab.txt	p: print
+sed '/first/d' ab.txt		d: delete
+sed s/first/second/ ab.txt	s:substitute
+sed s/first/second/g ab.txt	g:global
+
+sed s/bottle// /etc/passwd	<replace username first with space>
+ 1125  sed s/bottle//g /etc/passwd	<replace username from everywhere with space>
+ 1126  sed s/^bottle//g /etc/passwd
+
+ 1130  sed s/bottle//2 /etc/passwd  <replace username only second with space>
+ 
+ 
+ sed -i s/first/second/ ab.txt 	<save and change>
+ sed -e 's/mk/MK/g' -e 's/vk/VK/g' ab.txt  <multiple substitution>
+grep ^root /etc/passwd | sed 's/root/newroot'/
+
+[] wildcard
