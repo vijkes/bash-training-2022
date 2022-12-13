@@ -1,0 +1,885 @@
+
+  112  history
+  113  cat admink.sh
+  114  ls
+  115  ./admink.sh
+  116  history
+  117  cat admink.sh
+  118  vim admink.sh
+  119  ./admink.sh
+  120  cat /tmp/pass.txt
+  121  vim admink.sh
+  122  ./admink.sh
+  123  cat /tmp/pass.txt
+  124  vim admink.sh
+  125  ./admink.sh
+  126  cat admink.sh
+  127  vim admink.sh
+  128  ./admink.sh
+  129  kill -l
+  130  trap -l
+  131  ls
+  132  cat admink.sh
+  133  ls
+  134  bash admink.sh
+  135  cat /tmp/pass.txt
+  136  date
+  137  watch -n 1 date
+  138  echo $?
+  139  date
+  140  echo $?
+  141   vim admink.sh
+  142  bash admink.sh
+  143  cat /tmp/pass.txt
+  144   vim admink.sh
+  145  bash admink.sh
+  146   vim admink.sh
+  147  bash admink.sh
+  148   vim admink.sh
+  149  bash admink.sh
+  150  cat /tmp/pass.txt
+  151  bash admink.sh
+  152  cat admink.sh
+  153  man bash
+  154  vim admink.sh
+  155  ./admink.sh
+  156  cat /tmp/pass.txt
+  157  ./admink.sh
+  158  vim admink.sh
+  159  ./admink.sh
+  160  vim admink.sh
+  161  ./admink.sh
+  162  echo $?
+  163  ./admink.sh
+  164  echo $?
+  165  vim admink.sh
+  166  ./admink.sh
+  167  echo $?
+  168  ./admink.sh
+  169  echo $?
+  170  vim ./admink.sh
+  171  ./admink.sh
+  172  echo $?
+  173  ./admink.sh
+  174  echo $?
+  175  ./admink.sh
+  176  echo $?
+  177  man trap
+  178  while [ 2 -eq 4]; do echo "hi";  done
+  179  while [ 2 -eq 4 ]; do echo "hi"; done
+  180  while [ 2 -gt -4 ]; do echo "hi"; done
+  181  x=7
+  182  while [echo $x -gt 0.7]; do echo "infinity"; done
+  183  while [echo $x -gt 0.7]; do echo $x ; done
+  184  while [$x -gt 0.7]; do echo "$x*$x"; done
+  185  while [$x -gt 3]; do echo "$x*$x"; done
+  186  while [$x -gt 3]; do echo $x*$x; done
+  187  while [ $x -gt 3 ]; do echo $x*$x; done
+  188   page=1
+  189  while [ $page -le 10 ]; do echo $page is done; done
+  190  page=1
+  191  while [ $page -le 10 ]; do echo $page is done; page =j page + 1; done
+  192  while [ $page -le 10 ]; do echo $page is done; page +=1 ; done
+  193  y=2
+  194  y=y+1
+  195  echo $y
+  196  y=$y+1
+  197  echo $y
+  198  expr 4 + 1
+  199  (( $y + 1))
+  200  y=7
+  201  (( $y + 1))
+  202  echo (( $y + 1))
+  203  echo $(( $y + 1))
+  204  goods=1
+  205  while [ $page -le 10 ]; do echo $goods are ok; goods=$(( $goods + 1 )); done
+  206  goods=1
+  207  while [ $goods -le 10 ]; do echo $goods are ok; goods=$(( $goods + 1 )); done
+  208  laptop=5
+  209  while [ $laptop -gt 1 ]; do echo $laptop are ok; laptop=$(($laptop - 1 )); done
+  210  while [ $laptop -ge 1 ]; do echo $laptop are ok; laptop=$(($laptop - 1 )); done
+  211  while [ $laptop -ge 1 ]; do echo $laptop are ok; laptop=$(($laptop + 1 )); done
+  212  while date; do sleep 1; done
+  213  while date; do watch -n 1; done
+  214  while cal; do  sleep 1; done
+  215  while free -m; do sleep 1; done
+  216  while date; do sleep 1; done
+  217  while date; do sleep 2; done
+  218  ping -c 8.8.8.8
+  219  ping -c 1 8.8.8.8
+  220  while ping 8.8.8.8; do sleep 1; echo "connected"; done
+  221  ping -c 1 8.8.8.8
+  222  while ping -c 1 8.8.8.8 > /dev/null; do sleep 1; echo "connected"; done
+  223  x=1
+  224  while [ $x -le 7 ]; do if
+  225  while [ $x -le 7 ]; do if [ $x -eq 4 ]; then break; fi;  echo $x; x=$(( $x + 1  )); done
+  226  while [ $x -le 7 ]; do if [ $x -le 4 ]; then break; fi;  echo $x; x=$(( $x + 1  )); done
+  227  while [ $x -le 7 ]; do if [ $x -eq 4 ]; then break; fi;  echo $x; x=$(( $x + 1  )); done
+  228  echo $x
+  229  x=1
+  230  while [ $x -le 7 ]; do if [ $x -le 4 ]; then break; fi;  echo $x; x=$(( $x + 1  )); done
+  231  echo $x
+  232  while [ $x -le 7 ]; do if [ $x -eq 4 ]; then break; fi;  echo $x; x=$(( $x + 1  )); done
+  233  while:
+  234  while :; do echo x; done
+  235  echo $x
+  236  while :; do echo $x; done
+  237   if date; then echo ok; fi
+  238  if ! date; then echo ok ; fi
+  239  vim pinger.sh
+  240  bash pinger.sh
+  241  vim pinger.sh
+  242  bash pinger.sh
+  243  vim pinger.sh
+  244  bash pinger.sh
+  245  vim pinger.sh
+  246  bash pinger.sh
+  247  cat pinger.sh
+  248    ls -i
+  249  ll -i
+  250  ls -a
+  251  ls -all
+  252   man ls
+  253  ls --block-size=5M
+  254  ll
+  255  du -h
+  256  ls --block-size=10
+  257  ls --block-size=100
+  258  ls --block-size=10000
+  259  ls --block-size=1024 -l
+  260   vim mydata.sh
+  261  chomod a+x mydata.sh
+  262  chmod a+x mydata.sh
+  263  ls
+  264  ./mydata.sh
+  265  pwd
+  266  vim mydata.sh
+  267  echo $2
+  268  ./mydata.sh hi
+  269  echo $2
+  270  pwd
+  271  /root/mydata.sh hi
+  272  vim mydata.sh
+  273  /root/mydata.sh hi
+  274  echo $2
+  275  echo $1
+  276  vim mydata.sh
+  277  ./mydata.sh
+  278  vim mydata.sh
+  279  ./mydata.sh
+  280  vim mydata.sh
+  281  ./mydata.sh
+  282  vim mydata.sh
+  283  ./mydata.sh
+  284  vim mydata.sh
+  285  ./mydata.sh
+  286  vim mydata.sh
+  287  ./mydata.sh
+  288  vim mydata.sh
+  289  ./mydata.sh
+  290  vim mydata.sh
+  291  ./mydata.sh
+  292  vim mydata.sh
+  293  ./mydata.sh
+  294  ./mydata.shc
+  295  ./mydata.sh
+  296  vim mydata.sh
+  297  ./mydata.sh
+  298  vim mydata.sh
+  299  ./mydata.sh
+  300  ./mydata.shc
+  301  ./mydata.sh
+  302  ./mydata.shc
+  303  vim mydata.sh
+  304    cat /etc/ssh/sshd_config | grep PermitRootLogin
+  305  grep PermitRootLogin
+  306  find PermitRootLogin
+  307  grep PermitRootLogin /etc/ssh/sshd_config
+  308  sudo su - root
+  309  ls
+  310  history
+  311  vim mydata.sh
+  312  man getopt
+  313  man getopts
+  314   man getopt
+  315  man getopts
+  316  getopts "ab"
+  317  getopts "ab" a=5
+  318  getopts "ab" a
+  319   getopts "ab" 5
+  320  getopt "ab" a
+  321  getopt "ab"
+  322  getopt "ab" 5
+  323  getopt "ab" 5 14
+  324  getopt "al"
+  325  getopt "al" -a
+  326  getopt "al" -a -l
+  327  getopt "al" -a -l -k
+  328  getopt "al" -a -l -k=3
+  329  getopt "al" -a -l=3
+  330  man ls
+  331  getopt "al" -a -l -g
+  332  getopt "al" -a -g
+  333  getopt ""alg -a -g -l
+  334  getopt "alg" -a -g -l
+  335  getopt "algd" -a -g -l
+  336  getopt "algd" -d -a -g -l
+  337  getopt "al:" -a -l
+  338  getopt "a:l:" -a -l
+  339  getopt "al:" -a -l=3
+  340  getopt "al:" -a=1 -l=3
+  341  getopt "a:l:" -a=1 -l=3
+  342  getopt "a:l:t" -a=1 -l=3
+  343  getopt "a:l:t" -a=1 -l=3 t
+  344  getopt "a:l:t" -a=1 -l=3 t=34
+  345  getopt "a:l:t" -a=1 -l=3 t=34 p=342
+  346  getopt "a:l:t:" -a=1 -l=3 t=34 p=342
+  347  getopt "a:l:t:p:" -a=1 -l=3 t=34 p=342
+  348  getopt "a:l:t:p:" -a=1 -l=3 -t=34 -p=342
+  349  getopt "ab"
+  350  getopt "ab" ba
+  351  getopt "ab" b a
+  352  getopt "ab" b=3 a
+  353  getopt "ab" b=3 a2
+  354  getopt "ab" b=3 a=2
+  355  getopt "ab" -b=3 -a=2
+  356  getopt "ab:" -b=3 -a=2
+  357  getopt "a:b:" -b=3 -a=2
+  358  getopt "a:b:" -b=3 -a=2 -de
+  359  getopt "a:b:de:" -b=3 -a=2 -de
+  360  getopt "a:b:de:" -b=3 -a=2 -d
+  361  getopt "a:b:de:" -b=3 -a=2 -de=56
+  362  getopt "a:b:d:" -b=3 -a=2 -d=56
+  363  getopt "name,age,city" -name=vk -age=23 -city=jpr
+  364  getopt "name:age:city" -name=vk -age=23 -city=jpr
+  365  getopt "{name}:{age}:{city}" -name=vk -age=23 -city=jpr
+  366  man getopt
+  367  getopt -l "name:,age:,city" --name=vk --age=22 --city=jpr
+  368  getopt -l "name:,age:,city" --name=vk --age=22 --city=jpr"
+  369  getopt -l "name:,age:,city" -- --name=vk --age=22 --city=jpr
+  370  getopt -l "name:,age:,city" -- --name=vk
+  371  getopt -l "name:,age:,city" -o "n:a:c" -- --name=vk
+  372  getopt -l "name:,age:,city" -o "n:a:c" -- --name=vk --age=22
+  373  getopt -l "name:,age:,city" -o "n:a:c" -- --name=vk --age=22 --city=jpr
+  374  getopt -l "name:,age:,city:" -o "n:a:c" -- --name=vk --age=22 --city=jpr
+  375  getopt -l "name:,age:,city:" -o "n:a:c" -- --name vk --age 22 --city jpr
+  376  getopt "a:b:d:" -b 3 -a 2 -d 56
+  377  getopt -l "name:,age:,city:" -o "n:a:c" -- --name=vk --age=22 --city=jpr
+  378  getopt -l "name:,age:,city:" -o "n:a:c" -- --name=vk --age=22 --city=
+  379  getopt -l "name:,age:,city" -o "n:a:c" -- --name=vk --age=22 --city=
+  380  getopt -l "name:,age:,city" -o "n:a:c:" -- --name=vk --age=22 --city=
+  381  getopt -l "name:,age:,city" -o "n:a:c:" -- --name=vk --age=22 --city=jpr
+  382  getopt -l "name:,age:,city:" -o "n:a:c:" -- --name=vk --age=22 --city=jpr
+  383  getopt -l "name:,age:,city:" -o "n:a:dc:" -- --name=vk --age=22 --city=jpr
+  384  getopt -l "name:,age:,city:" -o "n:a:e:" -- --name=vk --age=22 --city=jpr
+  385  getopt -l "name:,age:,city:" -o "n:a:e:" -- --name=vk --age=22 --c=jpr
+  386  getopt -l "name:,age:,c:" -o "n:a:e:" -- --name=vk --age=22 --c=jpr
+  387  getopt -l "name:,age:,c:" -o "n:a:c:" -- --name=vk --age=22 --c=jpr
+  388  getopt -l "name:,age:,c:" -o "n:a:e:" -- --name=vk --age=22 --c=jpr
+  389  getopt -l "name:,age:,c:" -o "n:a:c:" -- --name=vk --age=22 --c=jpr
+  390  getopt -l "name:,age:,c:" -o "n:a:c:" -- --name=vk --age=22 --city=jpr
+  391  getopt -l "name:,age:,city:" -o "n:a:c:" -- --name=vk --age=22 --city=jpr
+  392  ls
+  393  history
+  394  vim mydata.sh
+  395  bash mydata.sh
+  396  vim mydata.sh
+  397  bash mydata.sh
+  398  vim mydata.sh
+  399  bash mydata.sh
+  400  cat mydata.sh
+  401  vim mydata.sh
+  402  bash mydata.sh
+  403  vim mydata.sh
+  404  bash mydata.sh
+  405  bash mydata.sh  -abc
+  406  vim mydata.sh
+  407  bash mydata.sh  -abc
+  408  vim mydata.sh
+  409  bash mydata.sh  -abc
+  410  cat mydata.sh
+  411  vim mydata.sh
+  412  bash mydata.sh  -abc
+  413  vim mydata.sh
+  414  bash mydata.sh  -abc
+  415  bash mydata.sh  -c -a -b
+  416  cat mydata.sh
+  417  vim mydata.sh
+  418  ./mydata.sh -a
+  419  ./mydata.sh -a-c
+  420  ./mydata.sh -a -c
+  421  ./mydata.sh -a -c -b
+  422  ./mydata.sh -a -c -b=23
+  423  ./mydata.sh -a -c -b 34234
+  424  vim mydata.sh
+  425  ./mydata.sh -a -c -b 34234
+  426  vim mydata.sh
+  427  ./mydata.sh -a -c -b 34234
+  428  vim mydata.sh
+  429  ./mydata.sh -a -c -b 34234
+  430  ./mydata.sh -a -c -b adfa3r4234
+  431  vim mydata.sh
+  432  ./mydata.sh -a -c -b adfa3r4234
+  433  vim mydata.sh
+  434  ./mydata.sh -a -c -b adfa3r4234
+  435  ./mydata.sh -a dfad -c -b adfa3r4234
+  436  vim mydata.sh
+  437  ./mydata.sh -a dfad -c -b adfa3r4234
+  438  vim mydata.sh
+  439  ./mydata.sh -a dfad -c -b adfa3r4234
+  440  vim mydata.sh
+  441  ./mydata.sh -a dfad -c -b adfa3r4234
+  442  ./mydata.sh -a dfad -c afads -b adfa3r4234
+  443  vim mydata.sh
+  444  ./mydata.sh -a dfad -c afads -b adfa3r4234
+  445  ./mydata.sh -a vk -c sd -b dafds
+  446  ls
+  447  vim mydata.sh
+  448  ls
+  449  history
+  450  cat mydata.sh
+  451  ./mydata.sh -a vk -b 23 -d muz
+  452  ./mydata.sh -a vk -b 23 -d muz -c
+  453  history
+  454  vim mydata.sh
+  455  ./mydata.sh -a vk -b 23 -d muz -c
+  456  cat mydata.sh
+  457  ./mydata.sh -a vk -b 23  -c
+  458  ./mydata.sh -a vk -b 23  -c -d
+  459  ./mydata.sh -a vk -b 23  -c -d dfs
+  460  man cat
+  461  vim mydata.sh
+  462  ./mydata.sh -a vk
+  463  vim mydata.sh
+  464  ./mydata.sh -a vk
+  465  ./mydata.sh -b 34
+  466  ./mydata.sh -c b
+  467  ./mydata.sh -d dbg
+  468  ./mydata.sh -de
+  469  ./mydata.sh -e
+  470  vim mydata.sh
+  471  ./mydata.sh -e
+  472  vim mydata.sh
+  473  ./mydata.sh -e
+  474  useradd tom
+  475  su tom
+  476  su - tom
+  477  useradd charger
+  478  pwd
+  479  ls
+  480  cd bell
+  481  tail -1 /etc/passwd
+  482  su bell
+  483  su charger
+  484  su - charger
+  485  pwd
+  486  sudo su - root
+  487  ls
+  488  grep -i '#permitrootlogin' /etc/ssh/sshd_config
+  489  sed 's/#permintrootlogin/PermitRootLogin/'  /etc/ssh/sshd_config
+  490  vim /etc/ssh/sshd_config
+  491  sed 's/#PermitRootLogin/PermitRootLogin' /ssh/sshd_config
+  492  sed 's/#PermitRootLogin/PermitRootLogin' etc/ssh/sshd_config
+  493  sed 's/#PermitRootLogin/PermitRootLogin/' etc/ssh/sshd_config
+  494  sed 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config
+  495  vim /etc/ssh/sshd_config
+  496  sed 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config
+  497  sed -i 's/#PermitRootLogin/PermitRootLogin/' /etc/ssh/sshd_config
+  498  vim /etc/ssh/sshd_config
+  499  sed -i 's/PermitRootLogin/#PermitRootLogin/' /etc/ssh/sshd_config
+  500  vim /etc/ssh/sshd_config
+  501  ls
+  502  cd -i /bell
+  503  man cd
+  504  man shopt
+  505  getopt
+  506  shopt
+  507  man shopt
+  508  shopt -s
+  509  shopt -f
+  510  shopt -p
+  511  shopt -q
+  512  man shopt
+  513  shopt -s
+  514  shopt
+  515  shopt cdspell
+  516  shopt -s cdspell
+  517  shopt cdspell
+  518  cd /Bell
+  519  ls
+  520  pwd
+  521  cd Bell
+  522  ls
+  523  exit
+  524  grep PermitRootLogin /etc/ssh/sshd_config
+  525  grep -i Permit /etc/ssh/sshd_config
+  526  grep -i #PermitRootLogin /etc/ssh/sshd_config
+  527  grep -i '#PermitRootLogin' /etc/ssh/sshd_config
+  528  cd Bell
+  529  pwd
+  530  ll
+  531  ls
+  532  cd Bell
+  533  shopt -s
+  534  shopt
+  535  shopt cdspell
+  536  shopt -s cdspell
+  537  cd /Bell
+  538  shopt cdspell]
+  539  shopt cdspell
+  540  cd Bell
+  541  exit
+  542  shopt cdspell
+  543  shopt -s cdspell
+  544  shopt cdspell
+  545  cd ?bell
+  546  exit
+  547  shopt cdspell
+  548  shopt -s cdspell
+  549  shopt cdspell
+  550  cd dfbell
+  551  cd -bell
+  552  cd >bell
+  553  cd ?bell
+  554  ls
+  555  history
+  556  ls -a -i'
+  557  ls -a -i
+  558  ll -a -i
+  559  cd ..
+  560  ls -a -i
+  561  ls -ai
+  562  ll -ai
+  563  ll -a
+  564  shopt -p
+  565  man shopt
+  566  historhy
+  567  history
+  568  ls
+  569  shopt
+  570  shopt histverify
+  571  shopt -s histverify
+  572  shopt histverify
+  573  history
+  574  ll
+  575   ll | column
+  576  ls
+  577   ls | column
+  578  cat /etc/passwd
+  579  cat /etc/passwd | column
+  580  ll
+  581  ll | column
+  582  man column
+  583  sed 's/#.*//' /etc/fstab | column --table --table-columns SOURCE,TARGET,T
+  584  YPE,OPTIONS,PASS,FREQ --table-right PASS,FREQ
+  585  sed 's/#.*//' /etc/fstab | column --table --table-columns SOURCE,TARGET,TYPE,OPTIONS,PASS,FREQ --table-right PASS,FREQ
+  586  man  fstab
+  587  vim /etc/fstab
+  588  sed 's/#.*//' /etc/fstab | column --table --table-columns SOURCE,TARGET,TYPE,OPTIONS,PASS,FREQ --table-right PASS,FREQ
+  589  df -hT
+  590  cat /etc/fstab
+  591  date | date > b.txt
+  592  cat b.txt
+  593  date | tee b.txt
+  594  cat b.txt
+  595  cal | tee >> b.txt
+  596  cat b.txt
+  597  cal | tee  b.txt
+  598  history
+  599  date | tee c.txt
+  600  cat c.txt
+  601  ps -aux | grep bash
+  602  $
+  603  echo $
+  604  echo $$
+  605  exit
+  606  pwd
+  607  ps -aux
+  608  ps -aux | grep bash
+  609  echo $$
+  610  echo hii | tee -a c.txt
+  611  cat c.txt
+  612  ps -aux
+  613  ps -aux  | grep bash
+  614  ps aux  | grep bash
+  615  ls
+  616  city=jpr
+  617  echo $city
+  618  vim c.sh
+  619  bash c.sh
+  620  bash c.sh &
+  621  ps -aux | grep bash
+  622  vim c.sh
+  623  bash c.sh &
+  624  bash c.sh
+  625  ps -aux | grep bash
+  626   vim c.sh
+  627  bash c.sh &
+  628  ps -aux | grep bash
+  629  export city
+  630  bash c.sh
+  631  cat >> c.sh
+  632  echo c.sh
+  633  bash c.sh
+  634  vim c.sh
+  635  bash c.sh
+  636  echo $city
+  637  echo $$
+  638  ( echo $$ )
+  639  (date )
+  640  ( $date )
+  641  (echo hi)
+  642  (cal)
+  643  (sugar=5kg)
+  644  echo $sugar
+  645  sugar=5kg
+  646  echo $sugar
+  647  (echo $sugar)
+  648  { device=moinitor}
+  649  { device=moinitor};
+  650  { device=moinitor;}
+  651  echo $device
+  652   echo $(date)
+  653  $(daqte)
+  654  $(date)
+  655  ls
+  656  mdkir sub-dir
+  657  mkdir sub-dir
+  658  cd sub-dir
+  659  ls
+  660  {mkdir {1..5};}
+  661  { mkdir {1..5}; }
+  662  ls
+  663  echo $?
+  664  vim d.sh
+  665  bash d.sh
+  666  j=1
+  667  while [j -lt 10]; do echo $j; done
+  668  while
+  669  history
+  670  while [$x -gt 0.7]; do echo "$x*$x"; done
+  671  while [$x -gt 7]; do echo "$x"; done
+  672  x=0
+  673  while [$x -gt 7]; do echo "$x"; done
+  674  x=25
+  675  while [$x -gt 7]; do echo "$x"; done
+  676  while [$x -gt 7]; do echo $x; done
+  677  cd
+  678  while [$x -gt 7]; do echo $x; done
+  679  vim d.sh
+  680  cd sub-dir/
+  681  ls
+  682  mv d.sh ..
+  683  cd ..
+  684  vim d.sh
+  685  bash d.sh
+  686  vim d.sh
+  687  bash d.sh
+  688  vim d.sh
+  689  bash d.sh
+  690  vim d.sh
+  691  bash d.sh
+  692  cat d.sh
+  693  bash d.sh
+  694  vim d.sh
+  695  bash d.sh
+  696  echo $?
+  697  vim d.sh
+  698  bash d.sh
+  699  vim d.sh
+  700  bash d.sh
+  701  vim d.sh
+  702  bash d.sh
+  703  vim d.sh
+  704  bash d.sh
+  705  cp d.sh d2.sh
+  706  vim d2.sh
+  707  vim parallel.sh
+  708  bash parallel.sh
+  709  vim parallel.sh
+  710  vim d2.sh
+  711  bash parallel.sh
+  712  vim d2.sh
+  713  vim parallel.sh
+  714  bash parallel.sh
+  715  chmod +x d.sh
+  716  chmod +x d2.sh
+  717  vim parallel.sh
+  718  chmod +x parallel.sh
+  719  ./parallel.sh
+  720  vim parallel.sh
+  721  ./d2.sh
+  722  pwd
+  723  ./root/d2.sh
+  724  ./root/d2.sh/
+  725  pwd
+  726  ls
+  727  vim parallel.sh
+  728  ./parallel.sh
+  729  ./d.sh
+  730  ./d2.sh
+  731  vim parallel.sh
+  732  ./parallel.sh
+  733
+  734  grep exit .
+  735  ll
+  736  find exit
+  737  grep exit
+  738  grep . exit
+  739  grep exit .
+  740  grep exit /root
+  741  cd /
+  742  ls
+  743  exit
+  744  who
+  745  w
+  746  date
+  747  who
+  748  w
+  749  ttyl
+  750  ttl
+  751  tty
+  752  w
+  753  watch -n 1 | w
+  754  watch -n 1 w
+  755
+  756   who
+  757  who | cut -d: -f1
+  758  who | cut -d: -f1,2
+  759  who | cut -d""
+  760  who | cut -d" "
+  761  who | cut -d" " -f1
+  762  cat /etc/shadow
+  763  man cut
+  764  who
+  765  who | cut -f1 -d""
+  766  who | cut -f1 -d" "
+  767  who | cut -f2 -d" "
+  768  who | cut -f3 -d" "
+  769  who | cut -f1,3 -d" "
+  770  who
+  771  who | cut -f{1,3} -d" "
+  772  who | cut -f3 -d" "
+  773  who | cut -f4 -d" "
+  774  who | cut -f4 -d"             "
+  775  man awk
+  776  who
+  777  who | awk '{ print $1}'
+  778  who | awk '{ print $1-4}'
+  779  who | awk '{ print $(1-4)}'
+  780  who | awk '{ print $1 : $2'
+  781  who | awk "{print $1}"
+  782  who | awk '{print $1}'
+  783  who | awk '{print $1 $2}'
+  784  who | awk '{print $1 ":" $2}'
+  785  who | awk '{print $1 ": " $2}'
+  786  who | awk '{print $1 " : " $2}'
+  787  who | awk '{print $1 " : " $2 " : " }'
+  788  who | awk '{print $1 " : " $2 " : " $3 }'
+  789  who
+  790  who | awk '{print $1 " : " $4 " : " $5 }'
+  791  w
+  792  useradd vk
+  793  exit
+  794  passwd v
+  795  passwd vk
+  796  w
+  797  exit
+  798  ls
+  799  pwd
+  800  grep exit ll
+  801  ll | grep exit
+  802  grep exit *
+  803  vim chk.sh
+  804  vim parallel.sh
+  805  ./parallel.sh
+  806  grep exit *
+  807  cat mydata.sh
+  808  vim parallel.sh
+  809  bash parallel.sh
+  810  vim parallel.sh
+  811  bash parallel.sh
+  812  vim parallel.sh
+  813  ls
+  814  cat d.sh
+  815  who
+  816  ifconfig
+  817  w
+  818  w | awk '{print $1 " : " $3 " : "$4}'
+  819  w | awk '{print $1 " : " $NF}'
+  820  w | awk '{ print $1 " : " $NF }'
+  821  who | awk '{ print $1 " : " $NF }'
+  822  man awk
+  823  date
+  824  date | awk '{print $2" : "$3" : "$6}'
+  825  date | awk '{print $3" : "$2" : "$6}'
+  826  date | awk '{print $3/$2/$6}'
+  827  date | awk '{print $3 / $2 / $6}'
+  828  date | awk '{ print $3 / $2 / $6 }'
+  829  date | awk '{ print $3 "/" $2 "/" $6 }'
+  830  date | awk '{ print $3 "-" $2 "-" $6 }'
+  831  date | awk '{ print $3 "-" $2 "-" $NF }'
+  832  date | awk '{ print $3 "-" $2 "-" $NR }'
+  833  date
+  834  date | awk '{ print $3 "-" $2 "-" $NF }'
+  835  date
+  836  date | awk 'OFS="" { print $3 $2 $NF}'
+  837  date | awk 'OFS="/" { print $3 $2 $NF}'
+  838  date | awk 'OFS="/" { print $3 : $2 : $NF}'
+  839  date | awk 'OFS="/" { print $3" : "$2" : " $NF}'
+  840  date | awk '{ print $3,$2,$NF}'
+  841  date | awk '{ print $3,,$2,,$NF}'
+  842  date | awk '{ print $3,, $2,, $NF}'
+  843  date | awk ' OFS="/" {print $3,$2,$NF}
+  844  date | awk ' OFS="/" {print $3,$2,$NF} '
+  845  date | awk ' OFS="-" {print $3,$2,$NF} '
+  846  date | awk ' OFS="^" {print $3,$2,$NF} '
+  847  ps
+  848  ps | awk '{print $1}'
+  849  ps | awk '{print $1,$4}'
+  850  ps | awk 'OFS="/"{print $1,$4}'
+  851  ps | awk 'OFS=" / " {print $1,$4}'
+  852  tail -5 /etc/passwd
+  853  tail -5 /etc/passwd | awk '{print $2}'
+  854  tail -5 /etc/passwd | awk '{ print $2 }'
+  855  tail -5 /etc/passwd | awk '{ print $1 }'
+  856  tail -5 /etc/passwd | awk '{ print $NF }'
+  857  tail -5 /etc/passwd | awk '{ print $NR }'
+  858  tail -5 /etc/passwd | awk 'OFS="/"{ print $NR }'
+  859  tail -5 /etc/passwd | awk 'OFS="/"{ print $NF }'
+  860  tail -5 /etc/passwd | awk 'OFS=":"{ print $NF }'
+  861  w
+  862  w | awk 'OFS="/"{ print $NF }'
+  863  w | awk 'OFS="/"{ print $NR }'
+  864  w | awk 'OFS="/"{ print $1 }'
+  865  what | awk 'OFS="/"{ print $1 }'
+  866  who | awk 'OFS="/"{ print $1 }'
+  867  who | awk 'OFS="/"{ print $1,$2 }'
+  868  who | awk '{print $1}'
+  869  who | awk 'BEGIN{print "Hello World"}''{print $1}'
+  870  who | awk 'BEGIN{print "Hello World"} {print $1}'
+  871    who | awk '{print  }'
+  872  pid
+  873  ps
+  874  ps | awk '{print $1}'
+  875  ps | awk 'BEGIN {print ""}{print $1}'
+  876  ps
+  877  ps | awk 'BEGIN {print "USER CMD"}{print $1}'
+  878  ps | awk 'BEGIN {print "USER CMD"}{print $1,$2}'
+  879  ps | awk 'BEGIN {print "USER CMD"}{print $1,$4}'
+  880  who
+  881  who | awk 'BEGIN {print "USER IP  TIME"} {print $1,$5,$4}'
+  882  who | awk 'BEGIN {print "USER    IP  TIME"} {print $1,$5,$4}'
+  883  who | awk 'BEGIN {print "USER          IP            TIME"} {print $1,$5,$4}'
+  884  cat /etc/passwd
+  885  cat /etc/passwd | awk -F ":" '{print$1}'
+  886  man awk
+  887  man cug
+  888  man cut
+  889  man awk
+  890  awk -F: {print$2} /etc/passwd
+  891  awk -F ":" '{print$2}' /etc/passwd
+  892  tail /etc/passwd
+  893  awk -f: '{print$1,$7}' /etc/passwd
+  894  awk -f":" '{print$1,$7}' /etc/passwd
+  895  awk -F ":" '{print$1,$7}' /etc/passwd
+  896  awk -F ":" '{print Hello}{print$1,$7}' /etc/passwd
+  897  awk -F ":" '{print "Hello"}{print$1,$7}' /etc/passwd
+  898  awk -F ":" 'OFS="-"{print "Hello"}{print$1,$7}' /etc/passwd
+  899  awk -F ":" 'OFS="-"{{print$1,$7}' /etc/passwd
+  900  awk -F ":" 'OFS="-"{print$1,$7}' /etc/passwd
+  901  ifconfig
+  902  ping 8.8.8.8
+  903  ping google.com
+  904  ping www.google.com
+  905  who
+  906  awk -F " " {print $1} | who
+  907  who | awk -F " " {print $1}
+  908  who | awk -F " " '{print $1}'
+  909  who | awk -F " " '{print $1,$5}'
+  910  who |
+  911  history
+  912  awk -F ":" {print$1} | /etc/passwd
+  913  /etc/passwd | awk -F ":" {print$1}
+  914  /etc/passwd | awk -F ":" {"print$1"}
+  915  /etc/passwd | awk -F ":" "{print$1}"
+  916  /etc/passwd | awk -F ":" '{print$1}'
+  917  cat /etc/passwd | awk -F ":" '{print$1}'
+  918  tail -1 /etc/passwd | awk -F ":" '{print$1}'
+  919  tail  /etc/passwd | awk -F ":" '{print$1}'
+  920  tail /etc/passwd
+  921  tail /etc/passwd | awk '{print $1}'
+  922  tail /etc/passwd | awk -F":" '{print $1}'
+  923  tail /etc/passwd | awk -F":" '{print $1,$7}'
+  924  tail /etc/passwd | awk -F":" 'OFS="/"{print $1,$7}'
+  925  tail /etc/passwd | awk -F":" 'OFS="-"{print $1,$7}'
+  926  tail /etc/passwd | awk -F":" 'OFS="--->"{print $1,$7}'
+  927  tail /etc/passwd | awk -F":" '{print USER  LOGIN}OFS="--->"{print $1,$7}'
+  928  tail /etc/passwd | awk -F":" '{print "USER  LOGIN" }OFS="--->"{print $1,$7}'
+  929  tail /etc/passwd | awk -F":" '{print "USER,LOGIN" }OFS="--->"{print $1,$7}'
+  930  tail /etc/passwd | awk -F":" '{print "USER"} {print "LOGIN" }OFS="--->"{print $1,$7}'
+  931  tail /etc/passwd | awk -F":" 'OFS="--->"{print User}{print $1,$7}'
+  932  tail /etc/passwd | awk -F":" 'OFS="--->"{print "User"}{print $1,$7}'
+  933  tail /etc/passwd | awk -F":" '{print "User","Permission"} {OFS="--->"{print "User"}{print $1,$7}'
+  934  tail /etc/passwd | awk -F":" 'OFS="--->"{print "User"}{print $1,$7}'
+  935  tail /etc/passwd | awk -F":" 'OFS="--->"{print "User  Perm "}{print $1,$7}'
+  936  tail /etc/passwd | awk -F":" 'OFS="--->"{ print "User  Perm "}{print $1,$7}'
+  937  tail /etc/passwd | awk -F":" '{print$1}'
+  938  tail /etc/passwd | awk -F":" '{print$1, $3>1000}'
+  939  tail /etc/passwd | awk -F":" '{print$1, $3> 1000}'
+  940  tail /etc/passwd
+  941  tail /etc/passwd | awk -F: '$3 >1000 {print $1}'
+  942  useradd -s /sbin/nologin aad
+  943  tail /etc/passwd | awk -F":" '$3 > 1000 {print $1}'
+  944  tail /etc/passwd
+  945  tail /etc/passwd | awk -F ":" '$7 grep nologin {print $1}'
+  946  tail /etc/passwd | awk -F ":" '$7 -eq nologin {print $1}'
+  947  tail /etc/passwd | awk -F ":" '$7 grep "nologin" {print $1}'
+  948  tail /etc/passwd | awk -F ":" '$7  "nologin" {print $1}'
+  949  tail /etc/passwd | awk -F ":" '$3 >= 1000 {print $1}'
+  950  tail /etc/passwd
+  951  man awk
+  952  awk -F ":" '$7~/nologin/' | cat /etc/passwd
+  953  history
+  954  tail /etc/passwd | awk -F ":" '$7~/nologin/ {print $1}'
+  955  tail /etc/passwd | awk -F ":" '$7~/bash/ {print $1}'
+  956  home /etc/passwd | awk -F ":" '$7~/bash/ {print $1}'
+  957  cat /etc/passwd | awk -F ":" '$7~/bash/ {print $1}'
+  958  cat /etc/passwd | awk -F ":" 'BEGIN {print "USER"}$7~/bash/ {print $1}'
+  959  cat /etc/passwd | awk -F ":" 'BEGIN {print "USER  id"}$7~/bash/ {print $1,$3}'
+  960  cat /etc/passwd | awk -F ":" 'BEGIN {print "USER  id\n----------------"}$7~/bash/ {print $1,$3}'
+  961  cat /etc/passwd | awk -F ":" 'OFS " | "BEGIN {print "USER  id\n----------------"}$7~/bash/ {print $1,$3}'
+  962  history
+  963  cat /etc/passwd | awk -F ":" 'OFS" = " | "BEGIN {print "USER  id\n----------------"}$7~/bash/ {print $1,$3}'
+  964  cat /etc/passwd | awk -F ":" 'OFS= " | "BEGIN {print "USER  id\n----------------"}$7~/bash/ {print $1,$3}'
+  965  cat /etc/passwd | awk -F ":" 'OFS=" | "BEGIN {print "USER  id\n----------------"}$7~/bash/ {print $1,$3}'
+  966  cat /etc/passwd | awk -F ":" 'OFS=" "BEGIN {print "USER  id\n----------------"}$7~/bash/ {print $1,$3}'
+  967  history
+  968  tail /etc/passwd | awk -F":" 'OFS="--->"{ print "User  Perm "}{print $1,$7}'
+  969   history
+  970  cat /etc/passwd | awk -F ":" 'BEGIN {print "USER"}$7~/bash/ {print $1}'
+  971  cat /etc/passwd | awk -F: 'BEGIN {print "USR   DIR\n-----------------" } /bash/ $3 >=1000 {print $1, $6}'
+  972  cat /etc/passwd | awk -F: 'BEGIN {print "USR     DIR\n-----------------" } /bash/ $3 >=1000 {print $1, $6}'
+  973  cat /etc/passwd | awk -F: 'BEGIN {print "USR   |   DIR\n-----------------" } /bash/ $3 >=1000 {print $1, $6}'
+  974  awk -F: '/bash/ {print $1}' /etc/passwd
+  975  awk -F: '/nologin/ {print $1}' /etc/passwd
+  976  awk 'BEGIN {print sq(25)}'
+  977  awk 'BEGIN { print sq(25) }'
+  978  awk 'BEGIN { print sqrt(25) }'
+  979  awk 'BEGIN { print hello world}'
+  980  awk 'BEGIN { print "hello world"}'
+  981  awk '{ print "hello world"}'
+  982  awk 'BEGIN { print 5*5}'
+  983  awk 'BEGIN { print 5*51}'
+  984  awk -F: '/bash/' { print $1 }' /etc/passwd | sort
+  985  awk -F: '/bash/ { print $1 }' /etc/passwd | sort
+  986  awk -F: '/bash/ { print $1 }' tail /etc/passwd | sort
+  987  awk -F: '/bash/ { print $1 }' | tail /etc/passwd | sort
+  988  awk -F: '/bash/ { print $1 }' | tail /etc/passwd
+  989  awk -F: '/bash$/ { print $1 }' | tail /etc/passwd
+  990  man sort
+  991  awk -F: '{print $7}' /etc/passwd | sort |uniq
+  992  awk '{ print $7 }' /etc/passwd
+  993  awk -F: '{print $7 }' /etc/passwd
+  994  awk -F: '{print $7 }' /etc/passwd | sort
+  995  awk -F: '{print $7 }' /etc/passwd | sort | uniq
