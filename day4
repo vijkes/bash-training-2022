@@ -1,0 +1,26 @@
+ls -a   short option
+ls --all long option
+
+difference b/w su <user> and su - <user>
+
+in su we are landed on same dir as of root
+in su - we are landed to home dir of user
+
+variable created in sub-shell can't be used on main shell
+but vice-vera is not true
+
+awk in itself a scripting lang. like shell scripting
+
+ w | awk '{print $1 " : " $3 " : "$4}'
+ 
+ who | awk '{ print $1 " : " $NF }'   <$NF is used to see last column/>
+ 
+ OFS : object field seperator
+ 
+ date | awk ' OFS="/" {print $3,$2,$NF} '
+ 12/Dec/2022
+ 
+ -d is delimiter in cut
+ 
+ -F is field seperator in awk
+
