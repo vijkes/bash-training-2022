@@ -1,0 +1,29 @@
+shell
+
+./
+. reprsents pwd
+so we have to provide full path of exe file
+
+echo ""
+if we don't use "" then extra space will not be counted
+
+echo ''		#strong quote
+
+var name can't be reserved words
+no whitespace b/w words
+
+we should not use spacing in declaring var
+bcz after space it will consider it as another var,
+and when not found it will throw error
+"cmd not found"
+
+$#  //count no. of cmd line args
+$@  //print all cmd line args passed  {word}
+$*  //print all cmd line args passed  {string}
+
+`` //old method
+$() //new method
+
+date +"%D-%T"
+
+
