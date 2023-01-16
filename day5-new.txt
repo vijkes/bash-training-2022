@@ -1,6 +1,6 @@
 shell
 
-./
+./file.sh
 . reprsents pwd
 so we have to provide full path of exe file
 
